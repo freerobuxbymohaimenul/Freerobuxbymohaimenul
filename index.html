@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freerobux.mohaimenul</title>
+    <style>
+        /* Modern, dark gaming theme */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+            max-width: 600px;
+            width: 90%;
+            border: 1px solid #333;
+        }
+
+        h1 {
+            color: #00b0f0;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #00b0f0, #00509e);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 176, 240, 0.4);
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 176, 240, 0.6);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* The hidden prank message */
+        #prank-message {
+            display: none;
+            font-size: 5em; /* Big letters */
+            font-weight: 900; /* Bold words */
+            color: #ff3333;
+            text-transform: uppercase;
+            line-height: 1.2;
+            animation: shake 0.5s;
+        }
+
+        /* Adds a tiny shake effect when the message appears */
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+            75% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The Convincing Fake Website -->
+    <div class="container" id="main-content">
+        <h1>freerobux.mohaimenul</h1>
+        <p class="description">
+            Welcome to the ultimate portal for players! Connect your account to instantly redeem your reward. No downloads, no waiting, and completely secure. 
+            <br><br>
+            Are you ready to upgrade your avatar and flex on your friends?
+        </p>
+        <button class="btn" id="claim-button">Claim Reward Now</button>
+        
+        <div class="footer">
+            Need help? Contact support at: mohaimenul98765@gmail.com
+        </div>
+    </div>
+
+    <!-- The Brutal Truth -->
+    <div id="prank-message">
+        NOTHING IS FREE<br>IN LIFE
+    </div>
+
+    <script>
+        // The logic that swaps the website for the big text
+        document.getElementById('claim-button').addEventListener('click', function() {
+            document.getElementById('main-content').style.display = 'none';
+            document.getElementById('prank-message').style.display = 'block';
+        });
+    </script>
+
+</body>
+  </html>
+  
